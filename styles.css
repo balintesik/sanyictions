@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Poppins', cursive;
+}
+
+h1{
+    font-size: 5rem;
+    font-family: 'Poppins', cursive;
+    color: #011F3F;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+h2{
+    font-family: 'Poppins', cursive;
+    font-size: 1.5rem;
+}
+
+#game-container{
+    transition: all 0.3s ease;
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 85%);
+    border-radius: 25px;
+    overflow: hidden;
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
+
+
+#tiles{
+    transition: all 0.3s ease;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 25px;
+    padding-top: 15px;
+}
+
+button{
+    width: 170px;
+    height: 75px;
+    border-radius: 15px;
+    border: none;
+    background-color: hsl(35, 100%, 96%);
+    color: hsl(211, 97%, 13%);
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(35, 100%, 90%);
+}
+
+button.clicked{
+    background-color: #FF7F3E;
+    color: aliceblue;
+}
+
+button#Submit{
+    background-color: hsl(211, 97%, 13%);
+    color: hsl(35, 100%, 96%);
+}
+
+#Submit:hover{
+    background-color: hsl(211, 97%, 23%);
+}
+
+#Submit:active{
+    background-color: hsl(211, 97%, 33%);
+}
+
+footer{
+    padding-top: 20px;
+    font-size: 0.7rem;
+}
+
+.ducky{
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    width: 300px;
+    height: auto;
+    z-index: -1;
+}
+
+.hidden{
+    display: hidden;
+}
+
+.hidden-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #37bb3e;
+    color: hsl(211, 97%, 13%);
+    grid-column-start: 1;
+    grid-column-end: -1;
+    height: 75px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 15px;
+    text-align: center;
+    padding: 0px;
+    margin: 25px;
+    margin-bottom: 0;
+}
+
+h3 {
+    color: hsl(35, 100%, 96%);
+    margin: 0;
+    font-size: 1.2rem;
+    padding: 0;
+}
+
+p {
+    color: hsl(35, 100%, 96%);
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+#testBtn {
+    cursor: pointer;
+    width: 100px;
+    height: auto;
+    z-index: -1;
+    background-color: hsl(211, 97%, 13%);
+    color: hsl(35, 100%, 96%);
+}
+
+.hidden{
+    display: none;
+}
