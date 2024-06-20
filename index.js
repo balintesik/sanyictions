@@ -71,8 +71,7 @@ function checkAnswer(){
 }
 
 function removeWords() {
-
-    $(".clicked").slideUp(function() {
-        $("#sol1").slideDown('slow');
+    $(".clicked").slideUp('fast', function() {
+        $("#sol1").slideDown('fast');
     });
 }
