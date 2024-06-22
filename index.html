@@ -12,37 +12,60 @@
 </head>
 <body>
     <h1>SANYICTIONS</h1>
+    <div id="status">Connect 4 words!</div>
     <div id="game-container">
         <div id="sol1" class="hidden">
-        <div class="hidden-container" >
-            <h3>Correct word</h3>
-            <p>Synonyms for "dog"</p>
+        <div class="hidden-container">
+            <h3>Synonyms 1</h3>
+            <p>Synonyms for "word1"</p>
         </div>
+        </div>
+        
+        <div id="sol2" class="hidden">
+            <div class="hidden-container">
+                <h3>Synonyms 2</h3>
+                <p>Synonyms for "word2"</p>
+            </div>
+        </div>
+
+        <div id="sol3" class="hidden">
+            <div class="hidden-container">
+                <h3>Synonyms 3</h3>
+                <p>Synonyms for "word3"</p>
+            </div>
+        </div>
+
+        <div id="sol4" class="hidden">
+            <div class="hidden-container">
+                <h3>Synonyms 4</h3>
+                <p>Synonyms for "word4"</p>
+            </div>
         </div>
 
         <div id="tiles">
-            <button id="1" onclick="tileSelect()" class="tile">+</button>
-            <button id="2" onclick="tileSelect()" class="tile">+</button>
-            <button id="3" onclick="tileSelect()" class="tile">+</button>
-            <button id="4" onclick="tileSelect()" class="tile">+</button>
-            <button id="5" onclick="tileSelect()" class="tile">+</button>
-            <button id="6" onclick="tileSelect()" class="tile">+</button>
-            <button id="7" onclick="tileSelect()" class="tile">+</button>
-            <button id="8" onclick="tileSelect()" class="tile">+</button>
-            <button id="9" onclick="tileSelect()" class="tile">+</button>
-            <button id="10" onclick="tileSelect()" class="tile">+</button>
-            <button id="11" onclick="tileSelect()" class="tile">+</button>
-            <button id="12" onclick="tileSelect()" class="tile">+</button>
-            <button id="13" onclick="tileSelect()" class="tile">+</button>
-            <button id="14" onclick="tileSelect()" class="tile">+</button>
-            <button id="15" onclick="tileSelect()" class="tile">+</button>
-            <button id="16" onclick="tileSelect()" class="tile">+</button>
+            <button id="1" class="tile">+</button>
+            <button id="2" class="tile">+</button>
+            <button id="3" class="tile">+</button>
+            <button id="4" class="tile">+</button>
+            <button id="5" class="tile">+</button>
+            <button id="6" class="tile">+</button>
+            <button id="7" class="tile">+</button>
+            <button id="8" class="tile">+</button>
+            <button id="9" class="tile">+</button>
+            <button id="10" class="tile">+</button>
+            <button id="11" class="tile">+</button>
+            <button id="12" class="tile">+</button>
+            <button id="13" class="tile">+</button>
+            <button id="14" class="tile">+</button>
+            <button id="15" class="tile">+</button>
+            <button id="16" class="tile">+</button>
         </div>
 
 
     </div>
-    <h2>Lives: 🖤🖤🖤🖤</h2>
-    <button id="Submit" onclick="checkAnswer()">Submit</button>
+
+    <h2 id="lives">Lives: <span id="life1">🖤</span><span id="life2">🖤</span><span id="life3">🖤</span><span id="life4">🖤</span></h2>
+    <button id="Submit" onclick="submitAnswer()">Submit</button>
 
 
     <div class="ducky">
@@ -51,6 +74,9 @@
 
     <footer>ComSiHoo Tech Ltd. 2024</footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="data.js"></script>
+    <script src="wordshandler.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
+

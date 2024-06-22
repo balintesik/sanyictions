@@ -38,8 +38,7 @@ h2{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
-    padding: 25px;
-    padding-top: 15px;
+    padding: 15px;
 }
 
 button{
@@ -90,27 +89,23 @@ footer{
     z-index: -1;
 }
 
-.hidden{
-    display: hidden;
-}
-
 .hidden-container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #37bb3e;
-    color: hsl(211, 97%, 13%);
     grid-column-start: 1;
     grid-column-end: -1;
     height: 75px;
+    width: 725px;
     font-size: 1.5rem;
     font-weight: bold;
     border-radius: 15px;
     text-align: center;
     padding: 0px;
-    margin: 25px;
-    margin-bottom: 0;
+    margin: 15px;
+    margin-bottom: 0px;
+    margin-top: 15px;
 }
 
 h3 {
@@ -138,4 +133,30 @@ p {
 
 .hidden{
     display: none;
+}
+
+#sol1 .hidden-container{
+    background-color: #55bb5a;
+}
+
+#sol2 .hidden-container{
+    background-color: #FFC700;
+}
+
+#sol3 .hidden-container{
+    background-color: #3AA6B9;
+}
+
+#sol4 .hidden-container{
+    background-color: #604CC3;
+}
+
+.wrongAns {
+    background-color: rgb(219, 29, 0);
+    color: hsl(35, 100%, 96%);
+}
+
+#status {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
 }
