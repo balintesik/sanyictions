@@ -146,11 +146,11 @@ function submitAnswer() {
             $("#sol4").slideDown('slow');
         });
         $("#Submit").slideUp();
-        $("#tiles").css("padding-bottom", "0");
+        $("#tiles").css("padding", "0");
     } else if (gameOver === "win") {
         $("#status").text("Congratulations! You won! 😁")
         $("#Submit").slideUp();
-        $("#tiles").css("padding-bottom", "0");
+        $("#tiles").css("padding", "0");
     }
 }
 
