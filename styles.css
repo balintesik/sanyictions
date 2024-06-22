@@ -181,6 +181,7 @@ p {
         height: 70px;
         font-weight: 800;
         border-radius: 5px;
+        word-wrap: break-word;
     }
 
     #tiles{
@@ -245,6 +246,7 @@ p {
         height: 70px;
         font-weight: 800;
         border-radius: 5px;
+        word-wrap: break-word;
     }
 
     #tiles{
