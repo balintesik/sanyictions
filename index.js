@@ -107,8 +107,9 @@ function checkCorrect(list) {
             $(".clicked").slideUp('fast', function() {
                 $(solString).slideDown('fast');
             });
-            $(".clicked").removeClass("clicked")
+            $(".clicked").removeClass("clicked");
             selectedTiles = 0;
+            $("#tiles").css("padding-top", "0px");
             return;
         }
     }
@@ -147,11 +148,14 @@ function submitAnswer() {
             $("#sol4").slideDown('slow');
         });
         $("#Submit").slideUp();
-        $("#tiles").css("padding", "0");
+        $("#tiles").hide();
+        //$("#tiles").css("padding-top", "15px");
+        //$("#tiles").css("padding-bottom", "0px");
+        //$(".hidden-container").css("margin-bottom: 15px")
     } else if (gameOver === "win") {
         $("#status").text("Congratulations! You won! 😁")
         $("#Submit").slideUp();
-        $("#tiles").css("padding", "0");
+        $("#tiles").hide();
     }
 }
 
