@@ -97,6 +97,7 @@ function checkCorrect(list) {
         if (match === 3) {
             guessedCombinations.push(list)
             statusMessage("One Away!");
+            animateReaction(".susdog");
             animateWrongAnswer();
             loseLife();
             return;
@@ -174,4 +175,10 @@ function statusMessage(message) {
     setTimeout(function() {
         statusAnnouncer.text("Connect four words!");
     }, 1000);
+}
+
+function animateReaction(classToAnimate){
+    $(classToAnimate).fadeIn('slow', function(){
+        $(classToAnimate).fadeOut('slow')
+    })
 }
