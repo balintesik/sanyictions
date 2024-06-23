@@ -178,7 +178,7 @@ function statusMessage(message) {
 }
 
 function animateReaction(classToAnimate){
-    $(classToAnimate).fadeIn('slow', function(){
-        $(classToAnimate).fadeOut('slow')
+    $(classToAnimate).fadeIn(1000, function(){
+        $(classToAnimate).fadeOut(3000)
     })
 }
