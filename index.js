@@ -149,13 +149,14 @@ function submitAnswer() {
         });
         $("#Submit").slideUp();
         $("#tiles").hide();
-        //$("#tiles").css("padding-top", "15px");
-        //$("#tiles").css("padding-bottom", "0px");
-        //$(".hidden-container").css("margin-bottom: 15px")
+        $("#DeselectAll").hide();
+        $("#Reset").show();
     } else if (gameOver === "win") {
         $("#status").text("Congratulations! You won! 😁")
         $("#Submit").slideUp();
         $("#tiles").hide();
+        $("#DeselectAll").hide();
+        $("#Reset").show();
     }
 }
 
@@ -185,4 +186,8 @@ function animateReaction(classToAnimate){
     $(classToAnimate).fadeIn(1000, function(){
         $(classToAnimate).fadeOut(3000)
     })
+}
+
+function deselectAll() {
+    $(".clicked").removeClass("clicked");
 }
