@@ -96,7 +96,16 @@ const wordsAndSynonyms = [
     {"word": "smooth", "synonyms": ["silky", "slick", "velvety", "polished"]},
     {"word": "rough", "synonyms": ["coarse", "harsh", "rugged", "bumpy"]},
     {"word": "shiny", "synonyms": ["glossy", "gleaming", "lustrous", "polished"]},
-    {"word": "dull", "synonyms": ["boring", "drab", "lifeless", "uninteresting"]}
+    {"word": "dull", "synonyms": ["boring", "drab", "lifeless", "uninteresting"]},
+    {"word": "to correct", "synonyms": ["remediate", "rectify", "repair", "restore"]},
+    {"word": "ease", "synonyms": ["mitigate", "alleviate", "allay", "assuage"]},
+    {"word": "worsen", "synonyms": ["exacerbate", "aggravate", "deteriorate", "impair"]},
+    {"word": "clean", "synonyms": ["cleanse", "decontaminate", "purify", "disinfect"]},
+    {"word": "resolve", "synonyms": ["reconcile", "pacify", "appease", "harmonize"]},
+    {"word": "magnify", "synonyms": ["amplify", "fortify", "intensify", "augment"]},
+    {"word": "basic", "synonyms": ["cardinal", "essential", "fundamental", "principal"]},
+    {"word": "deep seated", "synonyms": ["ingrained", "innate", "intrinsic", "inherent"]},
+    {"word": "strict", "synonyms": ["draconian", "rigorous", "stern", "stringent"]}
 ];
 
 const wordsAndSynonymsSPA = [
